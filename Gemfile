@@ -52,3 +52,7 @@ gem 'devise'
 gem 'devise-guests', '~> 0.3'
 gem 'rails-assets-leaflet-iiif', '~> 0.0.3', source: 'https://rails-assets.org'
 gem 'rails-assets-readmore', source: 'https://rails-assets.org'
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+end

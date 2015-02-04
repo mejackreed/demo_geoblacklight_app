@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get 'download/hgl/:id' => 'download#hgl', as: :download_hgl
+  get 'download/file/:id' => 'download#file', as: :download_file
+  resources :download, only: [:show, :file]
+  post "wms/handle"
+  root :to => "catalog#index"
+  blacklight_for :catalog
+  devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

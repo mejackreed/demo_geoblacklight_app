@@ -116,9 +116,9 @@ class CatalogController < ApplicationController
     # item_prop: [String] property given to span with Schema.org item property
     # link_to_search: [Boolean] that can be passed to link to a facet search
     # helper_method: [Symbol] method that can be used to render the value
-    config.add_show_field 'dc_creator_sm', label: 'Author(s)', itemprop: 'author'
+    # config.add_show_field 'dc_creator_sm', label: 'Author(s)', itemprop: 'author'
     config.add_show_field 'dc_description_s', label: 'Description', itemprop: 'description', helper_method: :render_value_as_truncate_abstract
-    config.add_show_field 'dc_publisher_s', label: 'Publisher', itemprop: 'publisher'
+    config.add_show_field 'dc_publisher_s', label: 'Data publisher', itemprop: 'publisher'
     config.add_show_field 'dct_isPartOf_sm', label: 'Collection', itemprop: 'isPartOf'
     config.add_show_field 'dct_spatial_sm', label: 'Place(s)', itemprop: 'spatial', link_to_search: true
     config.add_show_field 'dc_subject_sm', label: 'Subject(s)', itemprop: 'keywords', link_to_search: true

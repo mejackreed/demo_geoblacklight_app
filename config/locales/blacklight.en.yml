@@ -1,3 +1,7 @@
 en:
   blacklight:
-    application_name: 'Blacklight'
+    application_name: 'Your Geo App'
+    search:
+      form:
+        submit: 'Search this'
+
